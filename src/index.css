@@ -37,7 +37,7 @@
   }
 
   body {
-    @apply bg-background text-foreground font-noto;
+    @apply bg-white text-gray-900 font-noto;
   }
 
   .animate-in {

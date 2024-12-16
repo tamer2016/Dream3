@@ -1,25 +1,30 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { PhoneCall, MapPin, Mail, Scale, Gavel, FileText } from "lucide-react";
+import { PhoneCall, MapPin, Mail, Scale, Gavel, FileText, ArrowLeft } from "lucide-react";
 
 const Index = () => {
   const services = [
     {
       icon: <Scale className="w-8 h-8 text-gold" />,
       title: "استشارات قانونية",
-      description: "نقدم استشارات قانونية شاملة في مختلف المجالات"
+      description: "نقدم استشارات قانونية شاملة في مختلف المجالات القانونية مع حلول عملية وفعالة"
     },
     {
       icon: <Gavel className="w-8 h-8 text-gold" />,
       title: "الترافع أمام المحاكم",
-      description: "نمثل موكلينا في جميع درجات التقاضي"
+      description: "نمثل موكلينا في جميع درجات التقاضي بكفاءة واحترافية عالية"
     },
     {
       icon: <FileText className="w-8 h-8 text-gold" />,
       title: "صياغة العقود",
-      description: "إعداد وصياغة كافة أنواع العقود والاتفاقيات"
+      description: "إعداد وصياغة كافة أنواع العقود والاتفاقيات القانونية بدقة واحترافية"
     }
   ];
+
+  const handleContactClick = () => {
+    const phoneNumber = "0532299686";
+    window.location.href = `tel:${phoneNumber}`;
+  };
 
   return (
     <div className="min-h-screen">
@@ -32,10 +37,14 @@ const Index = () => {
             <span className="text-gold">للمحاماة والاستشارات القانونية</span>
           </h1>
           <p className="paragraph max-w-2xl mx-auto mb-8">
-            نقدم خدمات قانونية احترافية تلبي احتياجاتكم بكفاءة وموثوقية
+            نقدم خدمات قانونية احترافية تلبي احتياجاتكم بكفاءة وموثوقية عالية
           </p>
-          <Button className="bg-gold hover:bg-gold-dark text-white text-lg px-8 py-6 rounded-lg transition-all duration-300">
-            تواصل معنا
+          <Button 
+            onClick={handleContactClick}
+            className="bg-gold hover:bg-gold-dark text-white text-lg px-8 py-6 rounded-lg transition-all duration-300"
+          >
+            تواصل معنا الآن
+            <ArrowLeft className="mr-2 h-5 w-5" />
           </Button>
         </div>
       </section>
@@ -61,20 +70,28 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <h2 className="heading-2 text-center mb-16">تواصل معنا</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Card className="glass-card p-8 text-center animate-in">
+            <Card className="glass-card p-8 text-center animate-in hover:shadow-lg transition-all duration-300">
               <PhoneCall className="w-8 h-8 text-gold mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-2">اتصل بنا</h3>
-              <p className="text-gray-light" dir="ltr">0532299686</p>
+              <Button 
+                variant="link" 
+                className="text-gray-light hover:text-gold"
+                onClick={handleContactClick}
+              >
+                0532299686
+              </Button>
             </Card>
-            <Card className="glass-card p-8 text-center animate-in">
+            <Card className="glass-card p-8 text-center animate-in hover:shadow-lg transition-all duration-300">
               <MapPin className="w-8 h-8 text-gold mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-2">موقعنا</h3>
               <p className="text-gray-light">شارع ثوبان النبوي، بطحاء قريش، مكة 24352</p>
             </Card>
-            <Card className="glass-card p-8 text-center animate-in">
+            <Card className="glass-card p-8 text-center animate-in hover:shadow-lg transition-all duration-300">
               <Mail className="w-8 h-8 text-gold mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-2">البريد الإلكتروني</h3>
-              <p className="text-gray-light">info@attar-law.com</p>
+              <a href="mailto:info@attar-law.com" className="text-gray-light hover:text-gold">
+                info@attar-law.com
+              </a>
             </Card>
           </div>
         </div>
