@@ -65,7 +65,7 @@ const Index = () => {
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="heading-2 text-center mb-6">خدماتنا القانونية</h2>
-          <p className="paragraph text-center mb-16 max-w-2xl mx-auto">
+          <p className="paragraph2 text-center mb-16 max-w-2xl mx-auto">
             نقدم مجموعة متكاملة من الخدمات القانونية لتلبية احتياجاتكم
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
