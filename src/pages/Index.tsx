@@ -107,7 +107,7 @@ const Index = () => {
             <Card className="glass-card p-8 text-center animate-in hover:shadow-lg transition-all duration-300">
               <MapPin className="w-8 h-8 text-gold mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-2">موقعنا</h3>
-              <p className="text-gray-light">شارع ثوبان النبوي، بطحاء قريش، مكة 24352</p>
+              <p className="text-gray-light">العباس بن عبدالمطلب, An Naseem, Makkah 24245</p>
             </Card>
             <Card className="glass-card p-8 text-center animate-in hover:shadow-lg transition-all duration-300">
               <Mail className="w-8 h-8 text-gold mx-auto mb-4" />
