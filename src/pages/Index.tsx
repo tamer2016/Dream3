@@ -23,7 +23,7 @@ const Index = () => {
   ];
 
   const handleContactClick = () => {
-    const phoneNumber = "0532299686";
+    const phoneNumber = "0545666714";
     window.location.href = `tel:${phoneNumber}`;
   };
 
@@ -33,12 +33,12 @@ const Index = () => {
       <section className="relative h-[90vh] flex items-center justify-center bg-[url('/law-background.jpg')] bg-cover bg-center bg-no-repeat before:content-[''] before:absolute before:inset-0 before:bg-black/50">
         <div className="container mx-auto px-4 text-center animate-fade-up relative z-10">
           <h1 className="heading-1 text-white mb-6">
-            مكتب المحامي عبدالله عمر عطار
+            مكتب المحامي براء معيض السلمي
           </h1>
           <h2 className="text-gold text-3xl md:text-4xl font-semibold mt-8">
             للمحاماة والاستشارات القانونية
           </h2>
-          <p className="paragraph text-white/90 max-w-2xl mx-auto my-12">
+          <p className="paragraph text-white max-w-2xl mx-auto my-12">
             نقدم خدمات قانونية احترافية تلبي احتياجاتكم بكفاءة وموثوقية عالية
           </p>
           <div className="flex justify-center gap-4">
@@ -101,7 +101,7 @@ const Index = () => {
                 className="text-gray-light hover:text-gold"
                 onClick={handleContactClick}
               >
-                0532299686
+                0545666714
               </Button>
             </Card>
             <Card className="glass-card p-8 text-center animate-in hover:shadow-lg transition-all duration-300">

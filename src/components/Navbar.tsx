@@ -15,7 +15,7 @@ const Navbar = () => {
           <div className="flex items-center space-x-2 space-x-reverse">
             <Scale className="w-8 h-8 text-gold" />
             <Link to="/" className="text-xl font-bold text-gray-dark">
-              مكتب المحامي عبدالله عطار
+              مكتب المحامي براء معيض السلمي
             </Link>
           </div>
           <div className="flex space-x-6 space-x-reverse">
