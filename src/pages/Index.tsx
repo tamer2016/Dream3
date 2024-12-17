@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { PhoneCall, MapPin, Mail, Scale, Gavel, FileText, ArrowLeft } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   const services = [
@@ -27,7 +28,7 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen">
+    <div>
       {/* Hero Section */}
       <section className="relative h-[90vh] flex items-center justify-center bg-gradient-to-b from-gray-50 to-white">
         <div className="container mx-auto px-4 text-center animate-fade-up">
@@ -39,20 +40,33 @@ const Index = () => {
           <p className="paragraph max-w-2xl mx-auto mb-8">
             نقدم خدمات قانونية احترافية تلبي احتياجاتكم بكفاءة وموثوقية عالية
           </p>
-          <Button 
-            onClick={handleContactClick}
-            className="bg-gold hover:bg-gold-dark text-white text-lg px-8 py-6 rounded-lg transition-all duration-300"
-          >
-            تواصل معنا الآن
-            <ArrowLeft className="mr-2 h-5 w-5" />
-          </Button>
+          <div className="flex justify-center gap-4">
+            <Button 
+              onClick={handleContactClick}
+              className="bg-gold hover:bg-gold-dark text-white text-lg px-8 py-6 rounded-lg transition-all duration-300"
+            >
+              تواصل معنا الآن
+              <ArrowLeft className="mr-2 h-5 w-5" />
+            </Button>
+            <Link to="/services">
+              <Button 
+                variant="outline"
+                className="text-gold border-gold hover:bg-gold hover:text-white text-lg px-8 py-6 rounded-lg transition-all duration-300"
+              >
+                خدماتنا
+              </Button>
+            </Link>
+          </div>
         </div>
       </section>
 
-      {/* Services Section */}
+      {/* Services Preview Section */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="heading-2 text-center mb-16">خدماتنا القانونية</h2>
+          <h2 className="heading-2 text-center mb-6">خدماتنا القانونية</h2>
+          <p className="paragraph text-center mb-16 max-w-2xl mx-auto">
+            نقدم مجموعة متكاملة من الخدمات القانونية لتلبية احتياجاتكم
+          </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {services.map((service, index) => (
               <Card key={index} className="glass-card p-8 text-center animate-in hover:shadow-xl transition-all duration-300">
@@ -61,6 +75,14 @@ const Index = () => {
                 <p className="text-gray-light">{service.description}</p>
               </Card>
             ))}
+          </div>
+          <div className="text-center mt-12">
+            <Link to="/services">
+              <Button className="bg-gold hover:bg-gold-dark text-white">
+                عرض جميع الخدمات
+                <ArrowLeft className="mr-2 h-5 w-5" />
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
