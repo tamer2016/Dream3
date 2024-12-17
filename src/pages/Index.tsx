@@ -30,14 +30,15 @@ const Index = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative h-[90vh] flex items-center justify-center bg-gradient-to-b from-gray-50 to-white">
-        <div className="container mx-auto px-4 text-center animate-fade-up">
-          <h1 className="heading-1 mb-6">
+      <section className="relative h-[90vh] flex items-center justify-center bg-[url('/law-background.jpg')] bg-cover bg-center bg-no-repeat before:content-[''] before:absolute before:inset-0 before:bg-black/50">
+        <div className="container mx-auto px-4 text-center animate-fade-up relative z-10">
+          <h1 className="heading-1 text-white mb-6">
             مكتب المحامي عبدالله عمر عطار
-            <br />
-            <span className="text-gold">للمحاماة والاستشارات القانونية</span>
           </h1>
-          <p className="paragraph max-w-2xl mx-auto mb-8">
+          <h2 className="text-gold text-3xl md:text-4xl font-semibold mt-8">
+            للمحاماة والاستشارات القانونية
+          </h2>
+          <p className="paragraph text-white/90 max-w-2xl mx-auto my-12">
             نقدم خدمات قانونية احترافية تلبي احتياجاتكم بكفاءة وموثوقية عالية
           </p>
           <div className="flex justify-center gap-4">
@@ -51,7 +52,7 @@ const Index = () => {
             <Link to="/services">
               <Button 
                 variant="outline"
-                className="text-gold border-gold hover:bg-gold hover:text-white text-lg px-8 py-6 rounded-lg transition-all duration-300"
+                className="text-white border-gold hover:bg-gold hover:text-white text-lg px-8 py-6 rounded-lg transition-all duration-300"
               >
                 خدماتنا
               </Button>
