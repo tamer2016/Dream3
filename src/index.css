@@ -61,7 +61,7 @@
 }
 
 .heading-1 {
-  @apply text-4xl md:text-5xl font-bold text-gray-dark;
+  @apply text-4xl md:text-5xl font-bold text-white;
 }
 
 .heading-2 {
@@ -70,4 +70,8 @@
 
 .paragraph {
   @apply text-base md:text-lg text-gray-light leading-relaxed;
+}
+
+.paragraph2 {
+  @apply text-base md:text-lg text-white leading-relaxed;
 }
