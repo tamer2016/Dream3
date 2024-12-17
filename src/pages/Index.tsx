@@ -38,7 +38,7 @@ const Index = () => {
           <h2 className="text-gold text-3xl md:text-4xl font-semibold mt-8">
             للمحاماة والاستشارات القانونية
           </h2>
-          <p className="paragraph text-white max-w-2xl mx-auto my-12">
+          <p className="paragraph2 text-white max-w-2xl mx-auto my-12">
             نقدم خدمات قانونية احترافية تلبي احتياجاتكم بكفاءة وموثوقية عالية
           </p>
           <div className="flex justify-center gap-4">
