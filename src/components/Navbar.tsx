@@ -1,4 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
+import { Scale } from "lucide-react";
 
 const Navbar = () => {
   const location = useLocation();
@@ -11,7 +12,8 @@ const Navbar = () => {
     <nav className="bg-white shadow-sm">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          <div className="flex space-x-8 space-x-reverse">
+          <div className="flex items-center space-x-2 space-x-reverse">
+            <Scale className="w-8 h-8 text-gold" />
             <Link to="/" className="text-xl font-bold text-gray-dark">
               مكتب المحامي عبدالله عطار
             </Link>
